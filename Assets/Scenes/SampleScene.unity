@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310030c2f4107474cb775c7d1048fece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mVendorKey: cd985f11138e431d87aebc748cd93a33
+  mVendorKey: 
   mChannelName: pppp
 --- !u!114 &1415382971
 MonoBehaviour:

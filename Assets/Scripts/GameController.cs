@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Debug.Assert(!string.IsNullOrEmpty(mVendorKey), "API key is empty, please assign it in the gameobject");
+        if (string.IsNullOrEmpty(mVendorKey)) { OnQuit(); }
+
         GameObject g = GameObject.Find("Join");
         Text text = g.GetComponentInChildren<Text>(true);
         text.text = "Join";
