@@ -24,6 +24,7 @@ public class PermissionsTest : MonoBehaviour
 
             }
         }
+    }
 #endif
 }
 
