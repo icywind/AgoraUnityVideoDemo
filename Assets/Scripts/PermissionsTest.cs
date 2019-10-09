@@ -3,14 +3,17 @@
 using UnityEngine.Android;
 #endif
 
+
+
 public class PermissionsTest : MonoBehaviour
 {
+#if PLATFORM_ANDROID
     string[] mPermissions = { Permission.Camera, Permission.Microphone };
 
     void Start()
     {
 
-#if PLATFORM_ANDROID
+
         foreach (var permit in mPermissions)
         {
             if (!Permission.HasUserAuthorizedPermission(permit))
@@ -22,7 +25,6 @@ public class PermissionsTest : MonoBehaviour
             }
         }
 #endif
-    }
 }
 
 
